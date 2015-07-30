@@ -6,7 +6,7 @@ class PinsController < ApplicationController
     @pins = Pin.all
   end
 
-  def show
+  def show  
   end
 
   def new
@@ -50,6 +50,6 @@ class PinsController < ApplicationController
   end
 
   def pin_params
-    params.require(:pin).permit(:description)
+    params.require(:pin).permit(:description, :image)
   end
 end
