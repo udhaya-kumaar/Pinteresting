@@ -1,11 +1,9 @@
 <div class="jumbotron center">
 	<h1>What R u Up2!</h1>
-	<% if user_signed_in? %>
-	# do something
-	<% else %>
+	
 	<p> 
 		<%= link_to "LogIn",new_user_session_path, class: "btn btn-success btn-lg" %>
 		<%= link_to "SignUp",new_user_registration_path, class: "btn btn-danger" %>
 	</p>
-	<% end %>
+	
 </div>
